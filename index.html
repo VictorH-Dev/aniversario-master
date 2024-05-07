@@ -28,9 +28,10 @@
 				<div class="windows-page__actual-page">
 					<img src="imgs/FELIZ_ANIVERSÁRIO.SVG " class="feliz-aniversario">
 					<h2 class="windows-page__subtitle">Você já tem 20 anos, você acredita?</h2>
-					<audio controls autoplay loop>
-						<source src="melodies.mp3" type="audio/mpeg">
-					</audio>
+				<audio id="myAudio" controls>
+  <source src="matheusekauan.mp3" type="audio/mpeg">
+  Seu navegador não suporta o elemento de áudio.
+</audio>
 					<p>
 						<img class="windows-page__gif" src="imgs/spider.gif">
 					</p>
@@ -100,5 +101,12 @@
 			</div>
 		</div>
 		<script src="dates.js"></script>
+		<script >
+	document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("myAudio");
+    audio.play();
+  });
+  </script>
+		
 	</body>
 </html>
